@@ -1,0 +1,92 @@
+/*#hello{*/
+  /*background-image: url(http://tamustudyabroad.wordpress.com/files/2007/08/img_0802.jpg);*/
+  /*background-image: url(https://d3thwd8v8xsxme.cloudfront.net/wp-content/uploads/2011/10/happy-african-children.jpg?617982);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  margin-top: 0px;
+}*/
+
+
+.btn-danger:hover {
+  box-shadow: 20 10 15px black;
+  border: 5px solid black;
+}
+
+
+#image2 {
+  width: 100%;
+}
+
+.carousel-inner img{
+  /*opacity: .8;*/
+  background-size: cover;
+}
+
+
+.btn-danger {
+   position: fixed;
+  top: 500px;
+  left: 400px;
+  width: 25%;
+}
+
+.heading {
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 0 0 15px black;
+  position: fixed;
+  top: 50px;
+}
+
+
+.centered {
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 30px 0;
+}
+
+ul.rig {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -2.5%; /* should match li left margin */
+}
+
+ul.rig li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 0 2.5% 2.5%;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+ul.rig li img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 10px;
+}
+
+ul.rig li h3 {
+  margin: 0 0 5px;
+}
+
+ul.rig li p {
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #999;
+}
+
+ul.rig.columns-4 li {
+  width: 22.5%;
+}
