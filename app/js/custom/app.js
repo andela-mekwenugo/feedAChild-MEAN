@@ -3,26 +3,26 @@ FeedAChildApp.config(['$routeProvider', '$locationProvider', function($routeProv
   $locationProvider.html5Mode(true);
   $routeProvider
 
-    .when('/app', {
+    .when('/feedachild/app', {
       templateUrl: 'home.html',
       controller: 'mainCtrl'
     }).
 
-    when('/app/form', {
+    when('/feedachild/app/form', {
       templateUrl: 'form.html',
       controller: 'formCtrl'
     }).
 
-    when('/app/contact', {
+    when('/feedachild/app/contact', {
       templateUrl: 'contact.html',
       controller: 'contactCtrl'
     }).
 
-    when('/app/children', {
+    when('/feedachild/app/children', {
       templateUrl: 'children.html',
       controller: 'childrenCtrl'
     }).
-    when('/app/:id/delete', {
+    when('/feedachild/app/:id/delete', {
       templateUrl: 'contact.html',
       controller: 'deleteCtrl'
     }).
