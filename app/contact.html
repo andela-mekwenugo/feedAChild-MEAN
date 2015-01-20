@@ -1,0 +1,62 @@
+
+<div>
+  <form name="form">
+    <p>Click the button below to search for various heroes who have helped in feeding thousands of children all over the world</p>
+    <input id="test" type="submit" value="Search" class="btn btn-primary btn-lg active" ng-click='submit()'>
+  </form>
+  <div ng-bind="data"></div>
+  <div class="wrapper">
+    <div class="container">
+      <div id="four-columns" class="grid-container">
+        <ul class="rig columns-4" ng-show="toggleForm">
+          <li ng-repeat="donator in donators" class="donatorsList">
+            <p>FirstName: {{donator.firstname}}</p>
+            <p>LastName: {{donator.lastname}}</p>
+            <p>Email: {{donator.email}}</p>
+            <p>Country: {{donator.location}}</p>
+            <p>Amount: {{donator.Amount_to_donate_monthly}}</p>
+            <p>Credit card number: {{donator.card_number}}</p>
+            <button ng-click="edit(donator.firstname)">edit</button><!-- |<a href="#/:id/delete" ng-click="delete()">delete</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
+
+
+<div class="container" ng-hide="toggleForm">
+  <div class="jumbotron text-center">
+    <form>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">FirstName</label>
+        <input type="text" class="form-control" name="firstname" id="firstname" ng-model="FirstName">
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">LastName</label>
+        <input type="text" class="form-control" name="lastname" id="lastname" ng-model="LastName">
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Email</label>
+        <input type="text" class="form-control" name="email" id="email" ng-model="Email">
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Country</label>
+        <input type="text" class="form-control" name="location" id="location" ng-model="Country">
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Amount</label>
+        <input type="text" class="form-control" name="amount" id="amount" ng-model="Amount">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg active" ng-click="editSubmit()">EDIT</button>
+      </div>
+    </form>
+    <p class="edited"></p>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html ng-app="FeedAChildApp">
+    <head>
+      <base href='/feedAChild-MEAN/app'/>
+      <title>FEED A CHILD</title>
+      <meta charset= "utf-8">
+      <meta name= "viewport" content= "width= device-width, initial-scale= 1.0">
+      <!-- <link rel="stylesheet" type="text/css" href="css/vendor/reset.css"> -->
+      <link rel="stylesheet" type="text/css" href="css/custom/main.css">
+      <!-- <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.css"> -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+             <!--  // <script src="js/vendor/angular.js"></script>
+        // <script src="js/vendor/jquery-2.1.1.js"></script> -->
+    </head>
+    <body>
+      <header>
+        <nav class="navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#/">FEED A CHILD FOUNDATION</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#/"><i class="fa fa-home"></i>HOME</a></li>
+              <li><a href="#children"><i class="fa fa-key"></i>MEET THE CHILDREN</a></li>
+              <li><a href="#form"><i class="fa fa-lock"></i>DONATE</a></li>
+              <li><a href="#contact"><i class="fa fa-comment"></i>MEET our HEROes</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+        
+      <div ng-view></div>
+
+
+      <footer>
+        <nav class="navbar-default">
+          <div class="container">
+            <div class="navbar-footer">
+              <a class="navbar-brand" href="https://www.facebook.com/koso.mirabel.ekwenugo"><span class="fa fa-facebook"></span></a>
+            </div>
+            <div class="navbar-footer">
+              <a class="navbar-brand" href="https://www.skype.com/mirabel5000"><span class="fa fa-skype"></span></a>
+            </div>
+            <div class="navbar-footer">
+              <a class="navbar-brand" href="http://www.facebook.com/koso.mirabel.ekwenugo"><span class="fa fa-twitter"></span></a>
+            </div>
+            <div>&copy 2014 Designed by mimi</div>
+          </div>
+        </nav>
+      </footer>
+
+      <script src="js/vendor/jquery/dist/cdn/jquery-2.1.1.js"></script>
+      <script src="js/vendor/angular/angular.js"></script>
+      <script src="js/vendor/angular-route/angular-route.js"></script>
+      <script src="js/custom/app.js"></script>
+      <script src="js/custom/controller.js"></script>
+      <script src="js/vendor/bootstrap/js/carousel.js"></script>
+
+    </body>
+  </html>
