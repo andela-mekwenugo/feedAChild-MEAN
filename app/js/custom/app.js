@@ -2,31 +2,31 @@ var FeedAChildApp = angular.module('FeedAChildApp', ['ngRoute']);
 FeedAChildApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
   $routeProvider.
-    when('/feedAChild-MEAN/app', {
+    when('/', {
       templateUrl: 'index.html',
       controller: 'mainCtrl'
     }).
 
-    when('/feedAChild-MEAN/app', {
+    when('/', {
       templateUrl: 'home.html',
       controller: 'mainCtrl'
     }).
 
-    when('/feedAChild-MEAN/app/form', {
+    when('/form', {
       templateUrl: 'form.html',
       controller: 'formCtrl'
     }).
 
-    when('/feedAChild-MEAN/app/contact', {
+    when('/contact', {
       templateUrl: 'contact.html',
       controller: 'contactCtrl'
     }).
 
-    when('/feedAChild-MEAN/app/children', {
+    when('/children', {
       templateUrl: 'children.html',
       controller: 'childrenCtrl'
     }).
-    when('/feedAChild-MEAN/app/:id/delete', {
+    when('/:id/delete', {
       templateUrl: 'contact.html',
       controller: 'deleteCtrl'
     }).
