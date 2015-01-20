@@ -1,13 +1,9 @@
 var FeedAChildApp = angular.module('FeedAChildApp', ['ngRoute']);
 FeedAChildApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
-  $routeProvider.
-    when('/', {
-      templateUrl: 'index.html',
-      controller: 'mainCtrl'
-    }).
+  $routeProvider
 
-    when('/', {
+    .when('/', {
       templateUrl: 'home.html',
       controller: 'mainCtrl'
     }).
