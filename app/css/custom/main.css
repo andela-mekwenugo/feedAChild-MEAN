@@ -7,6 +7,12 @@
   margin-top: 0px;
 }*/
 
+body {
+
+font-size: 100%;
+
+}
+
 
 .btn-danger:hover {
   box-shadow: 20 10 15px black;
@@ -32,7 +38,7 @@
 }
 
 .heading {
-  font-size: 70px;
+  font-size: 4.375em;
   font-style: italic;
   font-weight: bold;
   text-shadow: 0 0 15px black;
