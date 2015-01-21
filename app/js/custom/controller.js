@@ -5,7 +5,7 @@ var FeedAChildApp = angular.module('FeedAChildApp');
 var urlBase = 'https://feed-a-child.herokuapp.com/donate';
 
 
-FeedAChildApp.controller('formCtrl', function($scope, $http) {
+FeedAChildApp.controller('formCtrl', function($scope, $http, $location) {
 // var urlBase = 'https://feed-a-child.herokuapp.com/donate';
 
   $scope.register = function() { 
@@ -17,12 +17,12 @@ FeedAChildApp.controller('formCtrl', function($scope, $http) {
     }).success(function(data) {
       console.log(data);
       $scope.message ("THANK YOU");
-      location.path = '/form';
-      $scope.FirstName = "";
-      $scope. LastName = "";
-      $scope.Email = "";
-      $scope.Country = "";
-      $scope.Amount = "";
+      $location.path('/form');
+      // $scope.FirstName = "";
+      // $scope. LastName = "";
+      // $scope.Email = "";
+      // $scope.Country = "";
+      // $scope.Amount = "";
       // $scope.Credit_Card_Number = "";
     }).error(function() {
       console.log('not posted...error!!!')
