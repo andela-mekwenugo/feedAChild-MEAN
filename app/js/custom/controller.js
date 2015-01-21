@@ -17,7 +17,7 @@ FeedAChildApp.controller('formCtrl', function($scope, $http, $location) {
     }).success(function(data) {
       console.log(data);
       alert('created');
-      // $scope.message("THANK YOU");
+      $scope.message = "THANK YOU";
       $location.path('/');
       // $scope.FirstName = "";
       // $scope. LastName = "";
