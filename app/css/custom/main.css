@@ -94,7 +94,7 @@ ul.rig.columns-4 li {
 @media screen and (max-width: 740px)
 {
   
-  header h1{
+  .heading {
     font-size: 5em;
   }
 }
