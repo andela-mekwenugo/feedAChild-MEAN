@@ -16,12 +16,12 @@ FeedAChildApp.controller('formCtrl', function($scope, $http) {
       headers: {'Content-Type' : 'application/x-www-form-urlencoded'}     
     }).success(function(data) {
       console.log(data);
-      $scope.message ("THANK YOU")
-      $scope.FirstName = "";
-      $scope. LastName = "";
-      $scope.Email = "";
-      $scope.Country = "";
-      $scope.Amount = "";
+      $scope.message ("THANK YOU");
+      // $scope.FirstName = "";
+      // $scope. LastName = "";
+      // $scope.Email = "";
+      // $scope.Country = "";
+      // $scope.Amount = "";
       // $scope.Credit_Card_Number = "";
     }).error(function() {
       console.log('not posted...error!!!')
