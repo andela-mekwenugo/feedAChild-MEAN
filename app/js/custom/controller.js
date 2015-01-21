@@ -16,8 +16,8 @@ FeedAChildApp.controller('formCtrl', function($scope, $http) {
       headers: {'Content-Type' : 'application/x-www-form-urlencoded'}     
     }).success(function(data) {
       console.log(data);
-      windows.location = '/';
-      $scope.message ("THANK YOU")
+      $scope.message ("THANK YOU");
+      location.path = '/form';
       $scope.FirstName = "";
       $scope. LastName = "";
       $scope.Email = "";
