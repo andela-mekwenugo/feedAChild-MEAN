@@ -13,20 +13,19 @@ FeedAChildApp.controller('formCtrl', function($scope, $http) {
       method : 'POST',
       url : 'https://feed-a-child.herokuapp.com/donate',
       data : $.param({firstname : $scope.FirstName, lastname : $scope.LastName, email : $scope.Email, location : $scope.Country, Amount_to_donate_monthly : $scope.Amount}),
-      headers : { 'Content-Type': 'application/x-www-form-urlencoded' }   
+      headers: {'Content-Type' : 'application/x-www-form-urlencoded'}     
     }).success(function(data) {
       console.log(data);
       windows.location = '/';
-      alert('THANK YOU FOR BEING A PART OF THIS COURSE');
-      // $scope.message ("THANK YOU");
-      // $scope.FirstName = "";
-      // $scope. LastName = "";
-      // $scope.Email = "";
-      // $scope.Country = "";
-      // $scope.Amount = "";
+      $scope.message ("THANK YOU")
+      $scope.FirstName = "";
+      $scope. LastName = "";
+      $scope.Email = "";
+      $scope.Country = "";
+      $scope.Amount = "";
       // $scope.Credit_Card_Number = "";
-    }).error(funcog('not potion() {
-      console.lsted...error!!!')
+    }).error(function() {
+      console.log('not posted...error!!!')
     });
     //   $scope.showResult = data;
       
