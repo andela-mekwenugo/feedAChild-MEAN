@@ -13,10 +13,12 @@ FeedAChildApp.controller('formCtrl', function($scope, $http) {
       method : 'POST',
       url : 'https://feed-a-child.herokuapp.com/donate',
       data : $.param({firstname : $scope.FirstName, lastname : $scope.LastName, email : $scope.Email, location : $scope.Country, Amount_to_donate_monthly : $scope.Amount}),
-      headers: {'Content-Type' : 'application/x-www-form-urlencoded'}     
+      headers : { 'Content-Type': 'application/x-www-form-urlencoded' }   
     }).success(function(data) {
       console.log(data);
-      $scope.message ("THANK YOU");
+      location.path('/form');
+      alert('THANK YOU FOR BEING A PART OF THIS COURSE');
+      // $scope.message ("THANK YOU");
       // $scope.FirstName = "";
       // $scope. LastName = "";
       // $scope.Email = "";
