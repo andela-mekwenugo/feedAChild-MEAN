@@ -16,8 +16,8 @@ FeedAChildApp.controller('formCtrl', function($scope, $http, $location) {
       headers: {'Content-Type' : 'application/x-www-form-urlencoded'}     
     }).success(function(data) {
       console.log(data);
-      alert('created');
-      $scope.message = "THANK YOU";
+      alert('THANK YOU FOR SIGNING UP TO BECOME A HERO. CLICK OK TO CONTINUE');
+      // $scope.message = "THANK YOU";
       $location.path('/');
       // $scope.FirstName = "";
       // $scope. LastName = "";
