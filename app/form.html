@@ -5,30 +5,30 @@
     <form ng-controller="formCtrl" ng-submit="register()">
       <div class="form-group">
         <label class="col-sm-2 control-label">FirstName</label>
-        <input type="text" class="form-control col-sm-6" name="firstname" id="firstname" ng-model="FirstName">
+        <input type="text" class="form-control" name="firstname" id="firstname" ng-model="FirstName">
       </div>
 
       <div class="form-group">
         <label class="col-sm-2 control-label">LastName</label>
-        <input type="text" class="form-control col-sm-6" name="lastname" id="lastname" ng-model="LastName">
+        <input type="text" class="form-control" name="lastname" id="lastname" ng-model="LastName">
       </div>
 
       <div class="form-group">
-        <label class="col-sm-2 control-label col-sm-6">Email</label>
+        <label class="col-sm-2 control-label">Email</label>
         <input type="text" class="form-control" name="email" id="email" ng-model="Email">
       </div>
 
       <div class="form-group">
-        <label class="col-sm-2 control-label col-sm-6">Country</label>
+        <label class="col-sm-2 control-label">Country</label>
         <input type="text" class="form-control" name="location" id="location" ng-model="Country">
       </div>
 
       <div class="form-group">
-        <label class="col-sm-2 control-label col-sm-6">Amount</label>
+        <label class="col-sm-2 control-label">Amount</label>
         <input type="text" class="form-control" name="amount" id="amount" ng-model="Amount">
       </div>
-      
-      <div ng-app="app">
+      <!-- <p class="filled">{{message}}</p> -->
+     <!--  <div ng-app="app">
         <div ng-controller="formCtrl">
          <form action="/uploads" ng-upload> 
            <input type="file" name="avatar"></input>
@@ -36,18 +36,18 @@
              upload-submit="results(content, completed)"></input>
          </form>
        </div>
-      </div>
+      </div> -->
      <!--  <div class="form-group">
           <label class="col-sm-3 control-label">Credit Card Number</label>
           <input type="text" class="form-control" name="card_number" id="card_number" ng-model="Credit_Card_Number"> -->
-      <script
+      <!--<script
           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
           data-amount=""
           data-name="Demo Site"
           data-description="2 widgets ($100 and above)"
           data-image="/128x128.png">
-      </script> 
+      </script> -->
       <button type="submit" class="btn btn-primary btn-lg active">REGISTER</button>
     </form>
   </div>
