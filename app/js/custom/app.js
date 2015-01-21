@@ -20,7 +20,7 @@ FeedAChildApp.config(['$routeProvider', '$locationProvider', function($routeProv
 
     when('/children', {
       templateUrl: 'children.html',
-      controller: 'childrenCtrl'
+      // controller: 'childrenCtrl'
     }).
     when('/:id/delete', {
       templateUrl: 'contact.html',
