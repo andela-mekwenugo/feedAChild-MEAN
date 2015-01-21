@@ -4,8 +4,8 @@ FeedAChildApp.config(['$routeProvider', '$locationProvider', function($routeProv
   $routeProvider
 
     .when('/', {
-      templateUrl: 'home.html',
-      controller: 'mainCtrl'
+      templateUrl: 'home.html'
+      // controller: 'mainCtrl'
     }).
 
     when('/form', {
