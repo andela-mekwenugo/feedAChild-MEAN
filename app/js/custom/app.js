@@ -3,10 +3,10 @@ FeedAChildApp.config(['$routeProvider', '$locationProvider', function($routeProv
   $locationProvider.html5Mode(true);
   $routeProvider
 
-    .when('/', {
-      templateUrl: 'home.html',
-      controller: 'mainCtrl'
-    }).
+    // .when('/', {
+    //   templateUrl: 'home.html',
+    //   controller: 'mainCtrl'
+    // }).
 
     when('/form', {
       templateUrl: 'form.html',
