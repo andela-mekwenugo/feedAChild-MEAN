@@ -16,7 +16,7 @@ FeedAChildApp.controller('formCtrl', function($scope, $http) {
       headers : { 'Content-Type': 'application/x-www-form-urlencoded' }   
     }).success(function(data) {
       console.log(data);
-      location.path('/form');
+      windows.location = '/';
       alert('THANK YOU FOR BEING A PART OF THIS COURSE');
       // $scope.message ("THANK YOU");
       // $scope.FirstName = "";
@@ -25,8 +25,8 @@ FeedAChildApp.controller('formCtrl', function($scope, $http) {
       // $scope.Country = "";
       // $scope.Amount = "";
       // $scope.Credit_Card_Number = "";
-    }).error(function() {
-      console.log('not posted...error!!!')
+    }).error(funcog('not potion() {
+      console.lsted...error!!!')
     });
     //   $scope.showResult = data;
       
