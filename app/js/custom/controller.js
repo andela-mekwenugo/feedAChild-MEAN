@@ -7,19 +7,12 @@ var urlBase = 'https://feed-a-child.herokuapp.com/donate';
 
 FeedAChildApp.controller('formCtrl', function($scope, $http) {
 // var urlBase = 'https://feed-a-child.herokuapp.com/donate';
-var donatorFields = {
-      firstname : $scope.FirstName,
-      lastname : $scope.LastName,
-      email : $scope.Email,
-      location : $scope.Country,
-      Amount_to_donate_monthly : $scope.Amount
-    };
 
   $scope.register = function() { 
     $http({
-      method: 'POST',
-      url: 'https://feed-a-child.herokuapp.com/donate',
-      data: $.param({donatorFields}),
+      method : 'POST',
+      url : 'https://feed-a-child.herokuapp.com/donate',
+      data : $.param({firstname : $scope.FirstName, lastname : $scope.LastName, email : $scope.Email, location : $scope.Country, Amount_to_donate_monthly : $scope.Amount}),
       headers: {'Content-Type' : 'application/x-www-form-urlencoded'}     
     }).success(function(data) {
       console.log(data);
