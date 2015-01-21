@@ -1,11 +1,4 @@
-/*#hello{*/
-  /*background-image: url(http://tamustudyabroad.wordpress.com/files/2007/08/img_0802.jpg);*/
-  /*background-image: url(https://d3thwd8v8xsxme.cloudfront.net/wp-content/uploads/2011/10/happy-african-children.jpg?617982);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-  margin-top: 0px;
-}*/
+
 
 body {
 
@@ -59,8 +52,7 @@ font-size: 100%;
 ul.rig {
   list-style: none;
   font-size: 0px;
-  margin-left: -2.5%; /* should match li left margin */
-}
+  margin-left: -2.5%;}
 
 ul.rig li {
   display: inline-block;
@@ -95,4 +87,14 @@ ul.rig li p {
 
 ul.rig.columns-4 li {
   width: 22.5%;
+}
+
+
+/***********************MEDIA QUERY*********************************/
+@media screen and (max-width: 740px)
+{
+  
+  header h1{
+    font-size: 5em;
+  }
 }
