@@ -2,7 +2,7 @@
   <div class="jumbotron text-center">
     <h1><span class="fa fa-sign-in"></span>TAKE THAT STEP...</h1>
 
-    <form ng-controller="formCtrl" action="" method="POST">
+    <form ng-controller="formCtrl" action="" method="POST"  ng-submit="register()">
       <div class="form-group">
         <label class="col-sm-2 control-label">FirstName</label>
         <input type="text" class="form-control" name="firstname" id="firstname" ng-model="FirstName">
@@ -48,7 +48,7 @@
           data-description="2 widgets ($100 and above)"
           data-image="/128x128.png">
       </script> -->
-      <button class="btn btn-primary btn-lg active" ng-click="register()">REGISTER</button>
+      <button type="submit" class="btn btn-primary btn-lg active">REGISTER</button>
     </form>
   </div>
 </div>
