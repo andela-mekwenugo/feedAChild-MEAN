@@ -26,7 +26,7 @@ FeedAChildApp.config(['$routeProvider', '$locationProvider', function($routeProv
       templateUrl: 'contact.html',
       controller: 'deleteCtrl'
     })//.
-    // otherwise ({
-    //   redirectTo: '/'
-    // });
+    .otherwise ({
+      redirectTo: '/'
+    });
 }]);
